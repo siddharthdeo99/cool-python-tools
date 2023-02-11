@@ -1,11 +1,9 @@
 #Author:Siddharth deo
 import zipfile
 import tarfile
-
 def unzip(filename):
     with zipfile.ZipFile(filename, 'r') as zip_ref:
         zip_ref.extractall()
-
 def untar(filename):
     with tarfile.open(filename, 'r') as tar_ref:
         tar_ref.extractall()
